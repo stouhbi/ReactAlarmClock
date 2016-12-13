@@ -1,10 +1,20 @@
-import React, { Component, PropTypes, View, Text, Image } from 'react-native';
+import React, { Component, PropTypes } from 'react';
+import {
+  AppRegistry,
+  StyleSheet,
+  Text,
+  View,
+  Image
+} from 'react-native';
 import AppActions from '../actions/AppActions';
 import AppStore from '../stores/AppStore';
-
+import Alarm from './Alarm';
+import Alarms from './Alarms';
+import Themes from './Themes';
+import About from './About';
 import { Avatar, Drawer, Divider, COLOR, TYPO } from 'react-native-material-design';
 
-export default class Navigation extends Component {
+class Navigation extends Component {
 
     static contextTypes = {
         drawer: PropTypes.object.isRequired,
@@ -20,16 +30,16 @@ export default class Navigation extends Component {
 
                 switch (name) {
                     case 'Alarms':
-                        component = require('./Alarms').default;
+                        component = Alarms;
                         break;
                     case 'Alarm':
-                        component = require('./Alarm').default;
+                        component = Alarm;
                         break;
                     case 'Themes':
-                        component = require('./Themes').default;
+                        component = Themes;
                         break;
                     case 'About':
-                        component = require('./About').default;
+                        component = About;
                         break;
                     default:
                         console.warn('No scene found');

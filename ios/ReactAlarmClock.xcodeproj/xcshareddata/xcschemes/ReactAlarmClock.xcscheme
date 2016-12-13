@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-               BuildableName = "DemoApp.app"
-               BlueprintName = "DemoApp"
-               ReferencedContainer = "container:DemoApp.xcodeproj">
+               BuildableName = "ReactAlarmClock.app"
+               BlueprintName = "ReactAlarmClock"
+               ReferencedContainer = "container:ReactAlarmClock.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -29,9 +29,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "DemoAppTests.xctest"
-               BlueprintName = "DemoAppTests"
-               ReferencedContainer = "container:DemoApp.xcodeproj">
+               BuildableName = "ReactAlarmClockTests.xctest"
+               BlueprintName = "ReactAlarmClockTests"
+               ReferencedContainer = "container:ReactAlarmClock.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -47,9 +47,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "DemoAppTests.xctest"
-               BlueprintName = "DemoAppTests"
-               ReferencedContainer = "container:DemoApp.xcodeproj">
+               BuildableName = "ReactAlarmClockTests.xctest"
+               BlueprintName = "ReactAlarmClockTests"
+               ReferencedContainer = "container:ReactAlarmClock.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -57,9 +57,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "DemoApp.app"
-            BlueprintName = "DemoApp"
-            ReferencedContainer = "container:DemoApp.xcodeproj">
+            BuildableName = "ReactAlarmClock.app"
+            BlueprintName = "ReactAlarmClock"
+            ReferencedContainer = "container:ReactAlarmClock.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -77,9 +77,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "DemoApp.app"
-            BlueprintName = "DemoApp"
-            ReferencedContainer = "container:DemoApp.xcodeproj">
+            BuildableName = "ReactAlarmClock.app"
+            BlueprintName = "ReactAlarmClock"
+            ReferencedContainer = "container:ReactAlarmClock.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -96,9 +96,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "DemoApp.app"
-            BlueprintName = "DemoApp"
-            ReferencedContainer = "container:DemoApp.xcodeproj">
+            BuildableName = "ReactAlarmClock.app"
+            BlueprintName = "ReactAlarmClock"
+            ReferencedContainer = "container:ReactAlarmClock.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

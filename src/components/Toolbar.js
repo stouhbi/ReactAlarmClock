@@ -1,8 +1,13 @@
-import React, { Component, PropTypes, Text, View } from 'react-native';
+import React, { Component, PropTypes } from 'react';
+import {
+  StyleSheet,
+  Text,
+  View
+} from 'react-native';
 import { Toolbar as MaterialToolbar } from 'react-native-material-design';
 import AppStore from '../stores/AppStore';
 
-export default class Toolbar extends Component {
+class Toolbar extends Component {
 
     constructor(props) {
         super(props);

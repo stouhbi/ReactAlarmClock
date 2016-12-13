@@ -1,15 +1,16 @@
 'use strict';
 
-var React = require('react-native');
-var {
+
+import React, { Component } from 'react';
+import {
   AppRegistry,
   StyleSheet,
   Text,
-  View,
-} = React;
+  View
+} from 'react-native';
 
-var ReactAlarmClock = React.createClass({
-  render: function() {
+class ReactAlarmClock extends Component{
+  render() {
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>
@@ -25,7 +26,7 @@ var ReactAlarmClock = React.createClass({
       </View>
     );
   }
-});
+}
 
 var styles = StyleSheet.create({
   container: {
@@ -46,4 +47,4 @@ var styles = StyleSheet.create({
   },
 });
 
-AppRegistry.registerComponent('ReactAlarmClock', () => ReactAlarmClock);
+AppRegistry.registerComponent('ReactAlarmClock', function() { return ReactAlarmClock });

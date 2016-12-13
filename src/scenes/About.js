@@ -1,4 +1,11 @@
-import React, { Component, View, Text, Image, IntentAndroid } from 'react-native';
+import React, { Component } from 'react';
+import {
+  AppRegistry,
+  StyleSheet,
+  Text,
+  View,
+  Image
+} from 'react-native';
 import { Card, Button, COLOR, TYPO } from 'react-native-material-design';
 
 import AppStore from '../stores/AppStore';

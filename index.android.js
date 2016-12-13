@@ -1,11 +1,20 @@
-import React, { AppRegistry, Component, Navigator, DrawerLayoutAndroid, ScrollView, View, Text } from 'react-native';
+import React, { Component } from 'react';
+import {
+  AppRegistry,
+  StyleSheet,
+  Text,
+  View,
+  Navigator,
+  DrawerLayoutAndroid,
+  ScrollView
+} from 'react-native';
 
-import { Toolbar } from './src/components';
+import {Toolbar}  from './src/components';
 
 import Navigation from './src/scenes/Navigation';
 import Alarms from './src/scenes/Alarms';
 
-class Application extends Component {
+export default class Application extends Component {
 
     static childContextTypes = {
         drawer: React.PropTypes.object,
@@ -44,7 +53,6 @@ class Application extends Component {
         const { drawer, navigator } = this.state;
 
         const navView = React.createElement(Navigation);
-
         return (
             <DrawerLayoutAndroid
                 drawerWidth={300}
@@ -65,14 +73,12 @@ class Application extends Component {
                     configureScene={() => {
                             return Navigator.SceneConfigs.FadeAndroid;
                         }}
-                    ref={(navigator) => { !this.state.navigator ? this.setNavigator(navigator) : null }}
+                    ref={(navigator) => { this.setNavigator(navigator)}}
                     renderScene={(route, navigator) => {
                             if (this.state.navigator && route.component) {
-                                return (
                                     <ScrollView style={styles.scene} showsVerticalScrollIndicator={false}>
                                         <route.component route={route} navigator={navigator} />
                                     </ScrollView>
-                                );
                             }
                         }}
                 />
@@ -82,7 +88,7 @@ class Application extends Component {
     }
 }
 
-AppRegistry.registerComponent('ReactAlarmClock', () => Application);
+AppRegistry.registerComponent('ReactAlarmClock', () => Application );
 
 const styles = {
     scene: {

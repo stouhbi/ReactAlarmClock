@@ -1,4 +1,11 @@
-import React, { Component, TouchableHighlight, View, Text } from 'react-native';
+import React, { Component } from 'react';
+import {
+  AppRegistry,
+  StyleSheet,
+  Text,
+  View,
+  TouchableHighlight
+} from 'react-native';
 import { Subheader, COLOR, PRIMARY_COLORS } from 'react-native-material-design';
 
 import AppActions from '../actions/AppActions';

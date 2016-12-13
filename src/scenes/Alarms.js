@@ -1,10 +1,23 @@
-import React, { Component, View, Text, TouchableHighlight } from 'react-native';
+import React, { Component } from 'react';
+import {
+  AppRegistry,
+  StyleSheet,
+  Text,
+  View,
+  TouchableHighlight
+} from 'react-native';
 import { Subheader, Divider, Card, Button, COLOR, TYPO } from 'react-native-material-design';
 
 import AppStore from '../stores/AppStore';
 import AppActions from '../actions/AppActions';
-
+import Alarm from './Alarm'
 export default class Alarms extends Component {
+
+  static get defaultProps() {
+     return {
+       title: 'Alarms'
+     };
+  }
 
     constructor(props) {
         super(props);
@@ -43,7 +56,7 @@ export default class Alarms extends Component {
     }
 
     navigateToAlarmView=(id)=> {
-        var Alarm = require('./Alarm').default;
+        var Alarm = Alarm;
         var alarmId = (id?id:null);
         this.props.navigator.push({
             name: 'Alarm',

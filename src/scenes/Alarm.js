@@ -1,13 +1,22 @@
-import React, { Component, View, Text, TextInput, Platform, PickerIOS } from 'react-native';
+import React, { Component } from 'react';
+import {
+  AppRegistry,
+  StyleSheet,
+  Text,
+  View,
+  Platform,
+  PickerIOS,
+  TextInput
+} from 'react-native';
 import { Card, Subheader, Divider, CheckboxGroup, Checkbox, RadioButtonGroup, Button, COLOR } from 'react-native-material-design';
 import PickerAndroid from 'react-native-picker-android';
 let Picker = Platform.OS === 'ios' ? PickerIOS : PickerAndroid;
 let PickerItem = Picker.Item;
-
+import Alarms from './Alarms';
 import AppStore from '../stores/AppStore';
 import AppActions from '../actions/AppActions';
 
-export default class Alarm extends Component {
+class Alarm extends Component {
 
     constructor(props) {
         super(props);
@@ -87,7 +96,7 @@ export default class Alarm extends Component {
     }
 
     navigateToAlarmsView=(id)=>{
-        var Alarms = require('./Alarms').default;
+        var Alarms = Alarms;
         var alarmId = (id?id:null);
         this.props.navigator.push({
             name: 'Alarms',
